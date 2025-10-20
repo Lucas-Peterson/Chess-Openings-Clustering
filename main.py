@@ -8,7 +8,7 @@ from sklearn.metrics import silhouette_score
 path = kagglehub.dataset_download("datasnaek/chess")
 print("Path to dataset files:", path)
 df = pd.read_csv(path + '/games.csv')
-print(f"✅ Dataset loaded. Rows: {len(df)}, Columns: {len(df.columns)}")
+print(f" Dataset loaded. Rows: {len(df)}, Columns: {len(df.columns)}")
 
 # 3. Calculate average game rating
 df['mean_rating'] = (df['white_rating'] + df['black_rating']) / 2
